@@ -52,7 +52,7 @@ public class UI {
 		return new ChessPosition(column, row);
 		}
 		catch (RuntimeException e) {
-			throw new InputMismatchException("Error lendo a posição inserida (Posiçõe válidas de a1 a H8");
+			throw new InputMismatchException("Error lendo a posicao inserida (Posicoes validas de a1 a H8");
 		}		
 	}
 
