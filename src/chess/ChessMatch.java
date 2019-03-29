@@ -34,6 +34,12 @@ public class ChessMatch {
         return mat;
     }
     
+    public boolean[][] possibleMovies(ChessPosition sourcePosition){
+    	Position position = sourcePosition.ToPosition();
+    	validateSourcePosition(position);
+    	return board.piece(position).possibleMoves();
+    }
+    
     public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition) {
     	Position source = sourcePosition.ToPosition();
     	Position target = targetPosition.ToPosition();
